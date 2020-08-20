@@ -17,3 +17,19 @@ body {
 .demo-p {
   font-size: 32px;
 }
+
+.demo-p::before,
+.demo-p::after {
+  color: red;
+  font-size: 60px;
+}
+
+.demo-p::before {
+  content: open-quote;
+  margin-right: 10px;
+}
+
+.demo-p::after {
+  content: close-quote;
+  margin-left: 10px;
+}

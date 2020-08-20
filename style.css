@@ -14,7 +14,7 @@ body {
 
 /* General styling */
 
-.demo-p {
+/* .demo-p {
   font-size: 32px;
 }
 
@@ -31,5 +31,23 @@ body {
 
 .demo-p::after {
   content: close-quote;
+  margin-left: 10px;
+}
+ */
+
+/* Icons styling */
+
+.demo-link {
+  font-size: 32px;
+  text-decoration: none;
+  color: red;
+  display: block;
+}
+
+.demo-link::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f35d";
+  font-size: 22px;
   margin-left: 10px;
 }

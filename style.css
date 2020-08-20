@@ -87,3 +87,24 @@ body {
 .demo-link:hover::after {
   transform: scaleX(1);
 }
+
+
+/* Overlays and images */
+
+body {
+  position: relative;
+  background: url("https://source.unsplash.com/random") center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
